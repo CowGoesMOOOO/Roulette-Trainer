@@ -323,7 +323,7 @@ function check(){
 	var input = document.getElementById("input");
 	var answer = 0;
 	if(zero){
-		answer = n1 * 17 + n2 * 17 + n3 * 17 + n4 * 17 + n5 * 35 + n6 * 8 + n7 * 8 + n8 * 12 + n9 * 12; 
+		answer = n1 * 17 + n2 * 17 + n3 * 17 + n4 * 17 + n5 * 35 + n6 * 8 + n7 * 8 + n8 * 11 + n9 * 11; 
 	} else {
 		answer = n1 * 17 + n2 * 17 + n3 * 17 + n4 * 17 + n5 * 35 + n6 * 8 + n7 * 8 + n8 * 8 + n9 * 8; 
 	}
