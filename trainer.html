@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Roulette Trainer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<div class="bg-image"></div>
+
+	<input id="input" class="inputtype" type="text">
+	<button class="arrow-button absolute" id="nextButton" onclick="loadNext()"><span class="arrow">&rarr;</span></button>
+	
+	<div id="menu" class="bg-text">
+		<div id="text">
+		
+		<h1> Du hast / Tu as </h1>
+		<h2 id="counter2"> X / X </h2>
+		<h2> richtig / réponses correctes </h2>
+
+		
+		</div>
+		<div class="slider-container" id="slider-container">
+		  <label for="slider" id="difficulty">Schwierigkeit / Difficulté:</label>
+		  <input type="range" min="1" max="3" value="1" class="slider" id="slider" oninput="onInput()">
+		  <label for="sliderValue" id="sliderValue">Mittel / moyenne</label>
+		</div>
+	
+		  <button class="arrow-button goNextButton" id="goAgain" onclick="goNext()">Weiter / Continuer</button>
+	</div>
+	<canvas id='canv' style='position:absolute; left:0px; top:0px;'>Your browser does not support the HTML5 canvas tag.</canvas>
+			<h2 id="counter" class="absolute"> 0 / 0 </h2>
+
+	<script src="assets/script.js"></script>
+	
+	
+</body>
+</html>
