@@ -54,8 +54,18 @@ function randomize(){
 	if(chance >= 8){
 		zero = true;
 	}
-	
+
 	if(difficulty == "1"){
+		n1 = getRandomInt(2);
+		n2 = getRandomInt(2);
+		n3 = getRandomInt(2);
+		n4 = getRandomInt(2);
+		n5 = getRandomInt(2);
+		n6 = getRandomInt(2);
+		n7 = getRandomInt(2);
+		n8 = getRandomInt(2);
+		n9 = getRandomInt(2);
+	}else if(difficulty == "2"){
 		n1 = getRandomInt(3);
 		n2 = getRandomInt(3);
 		n3 = getRandomInt(3);
@@ -65,7 +75,7 @@ function randomize(){
 		n7 = getRandomInt(3);
 		n8 = getRandomInt(3);
 		n9 = getRandomInt(3);
-	}else if(difficulty == "2"){
+	} else if(difficulty == "3"){
 		n1 = getRandomInt(10);
 		n2 = getRandomInt(10);
 		n3 = getRandomInt(10);
@@ -75,16 +85,6 @@ function randomize(){
 		n7 = getRandomInt(10);
 		n8 = getRandomInt(10);
 		n9 = getRandomInt(10);
-	} else if(difficulty == "3"){
-		n1 = getRandomInt(10);
-		n2 = getRandomInt(30);
-		n3 = getRandomInt(30);
-		n4 = getRandomInt(30);
-		n5 = getRandomInt(30);
-		n6 = getRandomInt(30);
-		n7 = getRandomInt(30);
-		n8 = getRandomInt(30);
-		n9 = getRandomInt(30);
 	}
 }
 
@@ -217,75 +217,76 @@ if(zero){
 	context.closePath();
 	}
 	
-	
-	context.fillStyle = 'black';
-	context.font = "30px serif";
-	if(n1 != 0){
-		if(n1 >= 10){
-			context.fillText(n1, pos1.x-14, pos1.y + 9);
-		} else {
-			context.fillText(n1, pos1.x-7 , pos1.y + 9);
+	if(difficulty != "1"){
+		context.fillStyle = 'black';
+		context.font = "30px serif";
+		if(n1 != 0){
+			if(n1 >= 10){
+				context.fillText(n1, pos1.x-14, pos1.y + 9);
+			} else {
+				context.fillText(n1, pos1.x-7 , pos1.y + 9);
+			}
+
 		}
-	
-	}
-	if(n2 != 0){
-		if(n2 >= 10){
-			context.fillText(n2, pos2.x -14 , pos2.y + 9);
-		} else {
-			context.fillText(n2, pos2.x -7 , pos2.y + 9);
+		if(n2 != 0){
+			if(n2 >= 10){
+				context.fillText(n2, pos2.x -14 , pos2.y + 9);
+			} else {
+				context.fillText(n2, pos2.x -7 , pos2.y + 9);
+			}
+		}
+		if(n3 != 0){
+			if(n3 >= 10) {
+				context.fillText(n3, pos3.x - 14, pos3.y + 9);
+			} else {
+				context.fillText(n3, pos3.x - 7, pos3.y + 9);
+			}
+		}
+		if(n4 != 0){
+			if(n4 >= 10){
+				context.fillText(n4, pos4.x - 14, pos4.y + 9);
+			} else {
+				context.fillText(n4, pos4.x - 7, pos4.y + 9);
+			}
+		}
+		if(n5 != 0){
+			if(n5 >= 10){
+				context.fillText(n5, mid.x - 14, mid.y + 9);
+			} else {
+				context.fillText(n5, mid.x - 7, mid.y + 9);
+			}
+		}
+
+		if(n6 != 0){
+			if(n6 >= 10){
+				context.fillText(n6, pos5.x - 14, pos5.y + 9);
+			} else {
+				context.fillText(n6, pos5.x - 7, pos5.y + 9);
+			}
+		}
+		if(n7 != 0){
+			if(n7 >= 10){
+				context.fillText(n7, pos6.x - 14, pos6.y + 9);
+			} else {
+				context.fillText(n7, pos6.x - 7, pos6.y + 9);
+			}
+		}
+		if(n8 != 0){
+			if(n8 >= 10){
+				context.fillText(n8, pos7.x - 14, pos7.y + 9);
+			} else {
+				context.fillText(n8, pos7.x - 7, pos7.y + 9);
+			}
+		}
+		if(n9 != 0){
+			if(n9 >= 10){
+				context.fillText(n9, pos8.x - 14, pos8.y + 9);
+			} else {
+				context.fillText(n9, pos8.x - 7, pos8.y + 9);
+			}
 		}
 	}
-	if(n3 != 0){
-		if(n3 >= 10) {
-			context.fillText(n3, pos3.x - 14, pos3.y + 9);
-		} else {
-			context.fillText(n3, pos3.x - 7, pos3.y + 9);
-		}
-	}
-	if(n4 != 0){
-		if(n4 >= 10){
-			context.fillText(n4, pos4.x - 14, pos4.y + 9);
-		} else {
-			context.fillText(n4, pos4.x - 7, pos4.y + 9);
-		}
-	}
-	if(n5 != 0){
-		if(n5 >= 10){
-			context.fillText(n5, mid.x - 14, mid.y + 9);
-		} else {
-			context.fillText(n5, mid.x - 7, mid.y + 9);
-		}
-	}
-	
-	if(n6 != 0){
-		if(n6 >= 10){
-			context.fillText(n6, pos5.x - 14, pos5.y + 9);
-		} else {
-			context.fillText(n6, pos5.x - 7, pos5.y + 9);
-		}
-	}
-	if(n7 != 0){
-		if(n7 >= 10){
-			context.fillText(n7, pos6.x - 14, pos6.y + 9);
-		} else {
-			context.fillText(n7, pos6.x - 7, pos6.y + 9);
-		}
-	}
-	if(n8 != 0){
-		if(n8 >= 10){
-			context.fillText(n8, pos7.x - 14, pos7.y + 9);
-		} else {
-			context.fillText(n8, pos7.x - 7, pos7.y + 9);
-		}
-	}
-	if(n9 != 0){
-		if(n9 >= 10){
-			context.fillText(n9, pos8.x - 14, pos8.y + 9);
-		} else {
-			context.fillText(n9, pos8.x - 7, pos8.y + 9);
-		}
-	}
-	
+
 	var inputW = imgW - 250;
 	var inputY = imgY + imgH + 7;
 	var inputX = imgX + imgW/3;
